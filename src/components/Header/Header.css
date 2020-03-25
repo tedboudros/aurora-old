@@ -1,0 +1,7 @@
+.header {
+  width: calc(100% - 16rem);
+  height: 12rem;
+  margin: 0 8rem;
+  display: block;
+  color: white;
+}

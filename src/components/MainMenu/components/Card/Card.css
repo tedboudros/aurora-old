@@ -1,0 +1,12 @@
+.mainMenu_card {
+  width: 15rem;
+  border: 0.2rem solid white;
+  border-radius: 1rem;
+  margin-right: 5rem;
+  display: block;
+  height: 15rem;
+}
+
+.mainMenu_card_selected {
+  border: 0.2rem solid #0099ff;
+}

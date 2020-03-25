@@ -1,0 +1,18 @@
+.header_user_pic {
+  position: absolute;
+  top: 4.3rem;
+  left: 8rem;
+  width: 2rem;
+  border: 0.2rem solid black;
+  filter: invert();
+  border-radius: 100%;
+  padding: 1rem;
+}
+
+.header_user_text {
+  position: absolute;
+  font-size: 30pt;
+  font-weight: 400;
+  top: 5rem;
+  left: 14rem;
+}

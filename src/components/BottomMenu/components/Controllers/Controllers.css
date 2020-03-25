@@ -1,0 +1,9 @@
+.controllers {
+  width: 22.5rem;
+  height: 5rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+}

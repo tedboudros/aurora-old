@@ -1,0 +1,12 @@
+.bottomMenu {
+  position: absolute;
+  width: calc(100% - 16rem);
+  height: 12rem;
+  margin: 0 8rem;
+  bottom: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}

@@ -1,0 +1,10 @@
+.controllers_controller {
+  width: 4rem;
+  filter: invert();
+  height: 4rem;
+  padding: 0 0.5rem;
+}
+
+.controllers_controller_disabled {
+  filter: invert(30%) !important;
+}

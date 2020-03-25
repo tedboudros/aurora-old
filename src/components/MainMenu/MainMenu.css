@@ -1,0 +1,16 @@
+.mainMenu {
+  height: 15rem;
+  top: calc(50% - 7.5rem);
+  position: absolute;
+  left: 8rem;
+  display: flex;
+  align-items: center;
+}
+
+.mainMenu_title {
+  position: absolute;
+  color: #0099ff;
+  top: -8rem;
+  font-size: 22pt;
+  font-weight: 300;
+}
