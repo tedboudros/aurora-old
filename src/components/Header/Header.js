@@ -1,9 +1,9 @@
-import React from "react";
-import Time from "./components/Time/Time";
-import User from "./components/User/User";
-import "./Header.css";
+import React from 'react';
+import Time from './components/Time/Time';
+import User from './components/User/User';
+import './Header.css';
 
-const Header = props => {
+const Header = () => {
   return (
     <div className="header">
       <User />

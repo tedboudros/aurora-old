@@ -1,14 +1,13 @@
 .notification {
   position: fixed;
-  top: 5rem;
+  bottom: 2rem;
   z-index: 1000;
-  right: 0;
+  right: 1rem;
   width: 20rem;
   height: 5rem;
   background: rgb(10, 10, 10);
-  border-radius: 1rem 0 0 1rem;
+  border-radius: 1rem;
   border: 0.2rem solid #0099ff;
-  border-right: 0;
   box-shadow: -6px 9px 10px #0000004d;
 }
 

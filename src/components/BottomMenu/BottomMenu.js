@@ -1,8 +1,8 @@
-import React from "react";
-import Controllers from "./components/Controllers/Controllers";
-import "./BottomMenu.css";
+import React from 'react';
+import Controllers from './components/Controllers/Controllers';
+import './BottomMenu.css';
 
-const BottomMenu = props => {
+const BottomMenu = () => {
   return (
     <div className="bottomMenu">
       <Controllers />

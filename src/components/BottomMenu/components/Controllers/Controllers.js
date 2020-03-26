@@ -1,9 +1,9 @@
-import React from "react";
-import Controller from "./components/Controller/Controller";
-import Keyboard from "./components/Keyboard/Keyboard";
-import "./Controllers.css";
+import React from 'react';
+import Controller from './components/Controller/Controller';
+import Keyboard from './components/Keyboard/Keyboard';
+import './Controllers.css';
 
-const Controllers = props => {
+const Controllers = () => {
   const controllers = false;
   return (
     <div className="controllers">
