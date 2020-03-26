@@ -1,0 +1,31 @@
+.notification {
+  position: fixed;
+  top: 5rem;
+  z-index: 1000;
+  right: 0;
+  width: 20rem;
+  height: 5rem;
+  background: rgb(10, 10, 10);
+  border-radius: 1rem 0 0 1rem;
+  border: 0.2rem solid #0099ff;
+  border-right: 0;
+  box-shadow: -6px 9px 10px #0000004d;
+}
+
+.notification_pic {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  left: 1.2rem;
+  filter: invert();
+  top: 1.2rem;
+}
+
+.notification_text {
+  font-size: 1.3rem;
+  position: absolute;
+  left: 5rem;
+  font-weight: 300;
+  color: white;
+  top: 1.6rem;
+}

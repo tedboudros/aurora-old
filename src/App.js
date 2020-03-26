@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Main from "./pages/Main";
 import Loading from "./pages/Loading";
+import Notification from "./components/Notification/Notification";
 import "./App.css";
 
 const transition = 120;
@@ -31,7 +32,12 @@ const App = () => {
     )
   };
 
-  return <div className={cursor ? "cursor" : "cursor_none"}>{pages[page]}</div>;
+  return (
+    <div className={cursor ? "cursor" : "cursor_none"}>
+      <Notification type="success" message="Menu Loaded" show />
+      {pages[page]}
+    </div>
+  );
 };
 
 export default App;
