@@ -1,21 +1,21 @@
-import React, { useState } from "react";
-import Card from "./components/Card/Card";
-import "./MainMenu.css";
+import React, { useState, useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import Card from './components/Card/Card';
+import './MainMenu.css';
+import { fetchGames } from '../../store/actions/games.actions';
 
-const games = [
-  { title: "League Of Legends", url: "/images/leagueoflegends.png" },
-  { title: "Apex Legends", url: "/images/apexlegends.png" },
-  { title: "Counter Strike: Global Offensive", url: "/images/csgo.png" },
-  { title: "PLAYERUNKNOWN’S BATTLEGROUNDS", url: "/images/pubg.jpg" }
-];
-
-const MainMenu = props => {
+const MainMenu = (props) => {
   const { setPage } = props;
   const [selectedGame, setSelectedGame] = useState(0);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchGames());
+  }, [dispatch]);
+  const games = useSelector((state) => state.games.games);
   return (
     <div className="mainMenu">
-      <span className="mainMenu_title">{games[selectedGame].title}</span>
-      {games.map((game, i) => (
+      <span className="mainMenu_title">{games[selectedGame]?.title}</span>
+      {games?.map((game, i) => (
         <Card
           key={i.toString()}
           index={i}
