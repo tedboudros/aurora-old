@@ -12,9 +12,34 @@ body {
     rgba(27, 27, 27, 1) 100%
   );
 }
-
+.cursor {
+  cursor: url(./assets/arrow.png), auto;
+  width: 100vw;
+  height: 100vh;
+}
+.cursor_none {
+  cursor: none;
+}
 * {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.fadeOut {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.1s, opacity 0.1s linear;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loading_text {
+  font-size: 26pt;
+  color: white;
 }

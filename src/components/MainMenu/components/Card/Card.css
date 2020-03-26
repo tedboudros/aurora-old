@@ -5,8 +5,11 @@
   margin-right: 5rem;
   display: block;
   height: 15rem;
+  transition: 0.1s;
+  background-size: contain;
 }
 
 .mainMenu_card_selected {
+  transition: 0.1s;
   border: 0.2rem solid #0099ff;
 }
