@@ -4,7 +4,7 @@ import Keyboard from './components/Keyboard/Keyboard';
 import './Controllers.css';
 
 const Controllers = () => {
-  const controllers = false;
+  const controllers = true;
   return (
     <div className="controllers">
       {controllers ? (

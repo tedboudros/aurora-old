@@ -5,9 +5,10 @@ import Success from './icons/success.svg';
 import './Notification.css';
 
 const Notification = (props) => {
-  const { type, message } = props;
+  const { notification } = props;
+  const { show, type, message } = notification;
   return (
-    <div className="notification">
+    <div className={`notification ${!show && 'notification_hidden'}`}>
       <img
         src={type === 'error' ? Error : type === 'warning' ? Warning : Success}
         alt="notification_pic"

@@ -5,13 +5,27 @@ import Notification from './components/Notification/Notification';
 import './App.css';
 
 const transition = 120;
-
+const notificationTimeOut = 3000;
 const App = () => {
+  const [notification, setNotification] = useState({
+    type: 'success',
+    message: 'gfd adsf asdflkj alk ja lkja jnhdfs adojf a fas fasj jajsodf '
+  });
+
+  const showNotification = (type, message) => {
+    setNotification({ type, message, show: true });
+    setTimeout(() => {
+      setNotification({ type, message, show: false });
+    }, notificationTimeOut);
+  };
+
   const [closing, setClosing] = useState('');
   const [page, setPage] = useState('main');
   const [cursor, setCursor] = useState(true);
+
   const setPageWithTransition = (value) => {
     setClosing(page);
+    showNotification('success', 'Launching...');
     if (value === 'loading') {
       setCursor(false);
     }
@@ -27,7 +41,7 @@ const App = () => {
 
   return (
     <div className={cursor ? 'cursor' : 'cursor_none'}>
-      <Notification type="success" message="Menu Loaded" show />
+      <Notification notification={notification} />
       {pages[page]}
     </div>
   );

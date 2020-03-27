@@ -1,30 +1,40 @@
 .notification {
   position: fixed;
-  bottom: 2rem;
+  top: 2rem;
   z-index: 1000;
-  right: 1rem;
+  right: -1rem;
   width: 20rem;
-  height: 5rem;
+  min-height: 5rem;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: rgb(10, 10, 10);
   border-radius: 1rem;
   border: 0.2rem solid #0099ff;
+  border-right: 0;
   box-shadow: -6px 9px 10px #0000004d;
+  transition: 0.3s ease-in-out;
+}
+
+.notification_hidden {
+  transform: translateX(21rem);
+  transition: 0.3s ease-in-out;
 }
 
 .notification_pic {
   width: 2.5rem;
   height: 2.5rem;
-  position: absolute;
-  left: 1.2rem;
+  margin-right: 1rem;
   filter: invert();
-  top: 1.2rem;
 }
 
 .notification_text {
   font-size: 1.3rem;
-  position: absolute;
-  left: 5rem;
+  width: 14rem;
+  display: block;
+  padding: 1rem 0;
+  line-break: strict;
   font-weight: 300;
   color: white;
-  top: 1.6rem;
 }
