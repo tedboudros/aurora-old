@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.2.1",
     "husky": "^4.2.3",
     "immutability-helper": "^3.0.1",
+    "joypad.js": "^2.1.4",
     "moment": "^2.24.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
